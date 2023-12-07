@@ -1210,7 +1210,7 @@ case 'chatgpt': case 'gpt':{
         break
       case "support":
       
-        let tex = `📍My Developer's Group📍\n\n*🎇 ɴɪʙʀᴀs-ᴍᴅ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ :🎇*\n\n*https://https://chat.whatsapp.com/FEEhU8uEP069YIOiq4GPOW*`
+        let tex = `📍My Developer's Group📍\n\n*🎇 ɴɪʙʀᴀs-ᴍᴅ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ :🎇*\n\n*https://chat.whatsapp.com/J00WYI5jwW0C1txyxRSyAP*`
 
         await Maria.sendMessage(m.sender, { text: `${tex}` },);
 
@@ -1225,7 +1225,7 @@ case 'chatgpt': case 'gpt':{
 *🚦Uptime:* ${runtime(process.uptime())}
 *🕸Version:* 1.2.0
 *👤Creator:*  ᴀᴡᴀɪs ᴍᴀʟɪᴋ
-*🎐supportgc:* ${global.support}\n
+*🎐supportgc:* https://chat.whatsapp.com/J00WYI5jwW0C1txyxRSyAP\n
 *Powered by ᴀᴡᴀɪs ᴍᴀʟɪᴋ*`
 Maria.sendMessage(m.chat, { video: { url: `https://media.tenor.com/VmwZnGeD0oEAAAPo/maria-naruse-shinmai-maou-no-testament.mp4` }, caption: ifx, gifPlayback: true }, { quoted: m });
         break
