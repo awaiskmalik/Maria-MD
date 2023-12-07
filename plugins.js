@@ -24,7 +24,7 @@ const store = makeInMemoryStore({
     })
 })
 
-let phoneNumber = "919931122319"
+let phoneNumber = "923478477910"
 let owner = JSON.parse(fs.readFileSync('./Gallery/database/owner.json'))
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
@@ -72,18 +72,18 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +919931122319")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +923478477910")))
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Your WhatsApp bot number\nFor example: +919931122319 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Your WhatsApp bot number\nFor example: +923478477910 : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +919931122319")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +923478477910")))
 
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Your WhatsApp bot number please\nFor example: +919931122319: `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Your WhatsApp bot number please\nFor example: +923478477910: `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
@@ -110,7 +110,7 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
             if (!Maria.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
             if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
             const m = smsg(Maria, mek, store)
-            require("./Heart")(Maria, m, chatUpdate, store)
+            require("./Nibras")(Maria, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
@@ -160,7 +160,7 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
 Maria.ev.on("connection.update",async  (s) => {
         const { connection, lastDisconnect } = s
         if (connection == "open") {
-console.log(chalk.green('🟨Welcome to Maria-md'));
+console.log(chalk.green('🟨Welcome to ɴɪʙʀᴀs-ᴍᴅ'));
 console.log(chalk.gray('\n\n🚀Initializing...'));
 console.log(chalk.cyan('\n\n🧩Connected'));
 
@@ -281,8 +281,8 @@ MariaLft = await getBuffer(ppuser)
                 if (anu.action == 'add') {
                 const Mariabuffer = await getBuffer(ppuser)
                 let MariaName = num
-                const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                const xtime = moment.tz('Asia/Islamabad').format('HH:mm:ss')
+	            const xdate = moment.tz('Asia/Islamabad').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 Mariabody = `┌──⊰ 🎗𝑾𝑬𝑳𝑳𝑪𝑶𝑴𝑬🎗⊰
 │⊳  🌐 To: ${metadata.subject}
@@ -305,8 +305,8 @@ Maria.sendMessage(anu.id,
 "sourceUrl": `${link}`}}})
                 } else if (anu.action == 'remove') {
                 	const Mariabuffer = await getBuffer(ppuser)
-                    const Mariatime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	                const Mariadate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                    const Mariatime = moment.tz('Asia/Islamabad').format('HH:mm:ss')
+	                const Mariadate = moment.tz('Asia/Islamabad').format('DD/MM/YYYY')
                 	let MariaName = num
                     const Mariamembers = metadata.participants.length
   Mariabody = `┌──⊰🍁𝑭𝑨𝑹𝑬𝑾𝑬𝑳𝑳🍁⊰
@@ -333,8 +333,8 @@ Maria.sendMessage(anu.id,
 "sourceUrl": `${link}`}}})
 } else if (anu.action == 'promote') {
 const Mariabuffer = await getBuffer(ppuser)
-const Mariatime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-const Mariadate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+const Mariatime = moment.tz('Asia/Islamabad').format('HH:mm:ss')
+const Mariadate = moment.tz('Asia/Islamabad').format('DD/MM/YYYY')
 let MariaName = num
 Mariabody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀🎉 @${MariaName.split("@")[0]}, you have been *promoted* to *admin* 🥳`
    Maria.sendMessage(anu.id,
@@ -351,8 +351,8 @@ Mariabody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀🎉 @${MariaName.split("@")[0]}, 
 "sourceUrl": `${link}`}}})
 } else if (anu.action == 'demote') {
 const Mariabuffer = await getBuffer(ppuser)
-const Mariatime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-const Mariadate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+const Mariatime = moment.tz('Asia/Islamabad').format('HH:mm:ss')
+const Mariadate = moment.tz('Asia/Islamabad').format('DD/MM/YYYY')
 let MariaName = num
 Mariabody = `𝗢𝗼𝗽𝘀‼️ @${MariaName.split("@")[0]}, you have been *demoted* from *admin* 😬`
 Maria.sendMessage(anu.id,
